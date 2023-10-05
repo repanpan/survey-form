@@ -1,0 +1,32 @@
+body {
+  margin: 40px 0 40px 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #e35267;
+  box-shadow: none;
+  font-family: "Montserrat", -apple-sytem, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", Arial, "Helvetica Neue", sans-serif;
+}
+main {
+  background-color: white;
+  padding: 10px 40px 40px 40px;
+  display: black;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  color: #191516;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+}

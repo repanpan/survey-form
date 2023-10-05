@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://w7.pngwing.com/pngs/275/496/png-transparent-computer-icons-checklist-survey-miscellaneous-angle-text-thumbnail.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank You For Taking Your Time To Give Us FeedBack
+        </p>
+      </header>
+      <form id="survey-form" action="succes.html" method="get">
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Enter Your Age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="occupation">Chose A Role That Best Describes You</label>
+          <select name="name" id="dropdown">
+            <option selected disable value>Select Your Role</option>
+            <option value="">Student</option>
+            <option value="">Full Time Job</option>
+            <option value="">Part Time Job</option>
+            <option value="">Prefer Not To Say</option>
+            <option value="">Other</option>
+          </select>
+          <div class="form-group">
+            <label for="rating"
+              >Would You Recomend Our Product To A Friend ?</label
+            >
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="rating"
+                id="never"
+                value="never"
+              /><label for="">Never</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="rating"
+                id="maybe"
+                value="maybe"
+              /><label for="">Maybe</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="rating"
+                id="Likely"
+                value="Likely"
+              /><label for="">Likely</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="rating"
+                id="Definitely"
+                value="Definitely"
+              /><label for="">Definitely</label>
+            </div>
+            <div class="form-group">
+              <label for=""
+                >Select Things That You Liked About Our Product</label
+              >
+              <div class="check-box">
+                <input type="checkbox" name="liked" id="ui" value="ui" />
+                <label for="ui">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>UI</span>
+                </label>
+              </div>
+              <div class="check-box">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="Features"
+                  value="Features"
+                />
+                <label for="">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Features</span>
+                </label>
+              </div>
+              <div class="check-box">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="Service"
+                  value="Service"
+                />
+                <label for="">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Service</span>
+                </label>
+              </div>
+              <div class="check-box">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="Simpleness"
+                  value="Simpleness"
+                />
+                <label for="">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Simpleness</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Remarks</label>
+            <textarea
+              name="remark"
+              id="remark"
+              placeholder="Tell Us How Can We IMprove.."
+            ></textarea>
+            <div class="form-group">
+              <button id="submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
